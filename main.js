@@ -1,3 +1,23 @@
+function preload() {
+  
+}
+
+function setup() {
+	canvas = createCanvas(1240,336);
+	canvas.parent("canvas");
+
+	video = createCapture(VIDEO);
+	video.size(800,400);
+
+	posenet= ml5.poseNet(video,modelLoaded);
+	posenet.on('pose',gotPoses);
+}
+
+function modelLoaded() {
+	console.log("Model Loaded!");
+}
+
+
 
 /*created by prashant shukla */
 
