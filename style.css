@@ -21,3 +21,19 @@ body {
 #start,#status {
     font-size: 22px;
 }
+
+#footer {
+    width: 100%;
+    font-size: 22px;
+    position: fixed;
+    bottom: 0;
+    line-height: 2;
+    background-color: gray;
+    color: red;
+}
+
+canvas {
+    border: 3px solid white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px white;
+}
